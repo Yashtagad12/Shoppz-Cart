@@ -6,4 +6,4 @@ const PieChart = () => {
   )
 }
 
-export default PieChart
+export default PieChart;

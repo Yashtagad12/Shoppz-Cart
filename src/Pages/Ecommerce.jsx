@@ -4,8 +4,11 @@ import WelcomeBg from '../data/welcome-bg.svg';
 import Button from '../Components/Button';
 import Stacked from '../Components/Charts/Stacked';
 import SparkLine from '../Components/Charts/SparkLine';
+import { useStateContext } from '../Context/ContextProvider';
 
 const Ecommerce = () => {
+  const { currentColor } = useStateContext();
+
   return (
     <div className="mt-12 px-4 py-4 md:px-6 md:py-4">
 
@@ -90,7 +93,7 @@ const Ecommerce = () => {
             </div>
 
             <div className="mt-12">
-              <SparkLine data={SparklineAreaData} />
+              <SparkLine data={SparklineAreaData} currentColor={currentColor} color={currentColor} />
             </div>
 
 
@@ -98,10 +101,10 @@ const Ecommerce = () => {
 
           <div className="lg:col-span-4">
             <Stacked width="100%" height={420} />
-                                  <div className="mt-8">
+            <div className="mt-8">
               <Button
                 color="white"
-                bgColor="#00c951"
+                bgColor={currentColor}
                 text="Download Report"
                 borderRadius="10px"
                 size="md"

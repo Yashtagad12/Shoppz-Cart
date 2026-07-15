@@ -6,6 +6,11 @@
   --theme-color: #03C9D7;
 }
 
+html {
+  width: 100%;
+  max-width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;

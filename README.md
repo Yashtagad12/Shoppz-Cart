@@ -1,4 +1,4 @@
-# 🛒 Shoppz Cart Dashboard — Admin & Analytics Panel
+# 🛒 Shopzz Cart Dashboard — Admin & Analytics Panel
 
 ![Shopzz Cart Dashboard Banner](./src/assets/Screenshots/shopzz-cart-logo.png)
 

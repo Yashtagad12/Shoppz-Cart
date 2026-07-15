@@ -3,7 +3,7 @@ import { Header } from "../Components";
 
 const Editor = () => {
   const [text, setText] = useState(
-`# Welcome
+    `# Welcome
 
 This is a simple HTML editor.
 
@@ -94,7 +94,7 @@ You can type here freely.`
         dir="ltr"
         value={text}
         onChange={(e) => setText(e.target.value)}
-        className="w-full h-[400px] border rounded-lg p-5 font-mono resize-none outline-none"
+        className="w-full h-100 border rounded-lg p-5 font-mono resize-none outline-none"
         style={{
           direction: "ltr",
           textAlign: "left",
@@ -115,7 +115,7 @@ You can type here freely.`
             reversing all rendered text as well. */}
         <div
           dir="ltr"
-          className="border rounded-lg p-5 min-h-[200px]"
+          className="border rounded-lg p-5 min-h-50"
           style={{
             direction: "ltr",
             textAlign: "left",

@@ -18,7 +18,7 @@ const Ecommerce = () => {
           className="absolute inset-0 bg-cover bg-center rounded-[10px]"
           style={{ backgroundImage: `url(${WelcomeBg})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-black/10 rounded-[10px]" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/40 to-black/10 rounded-[10px]" />
 
         <div className="relative h-full flex flex-col justify-center px-6 sm:px-8 md:px-12 py-8 md:py-0 text-white">
           <p className="text-4xl md:text-5xl font-bold">Good Morning, John Doe!</p>

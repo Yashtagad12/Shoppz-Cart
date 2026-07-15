@@ -9,9 +9,10 @@ export { default as Chart } from './Chat';
 export { default as Notifcation } from './Notification';
 export { default as UserProfile } from './UserProfile';
 export { default as SparkLine } from './Charts/SparkLine';
-export { default as LineChart } from './Charts/LineChart';
+export { default as LineChart } from './Charts/linechart';
 export { default as Stacked } from './Charts/Stacked';
-export { default as PieChart } from './Charts/PieChart';
+export { default as PieChartComponent } from './Charts/PieChart';
 export { default as ChartsHeader } from './ChartsHeader';
-export { default as Header } from './Header';
+export { default as Header } from '../Components/Header';
+import { default as Financial } from '../Pages/charts/Financial'
 

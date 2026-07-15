@@ -10,10 +10,11 @@ const ThemeSettings = ({ onClose }) => {
     setMode,
     currentMode,
     currentColor,
+    setThemeSettings,
   } = useStateContext();
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm">
+    <div className="fixed inset-0 z-50 bg-black/20">
 
       {/* Right Panel */}
 
@@ -26,12 +27,11 @@ const ThemeSettings = ({ onClose }) => {
           <h2 className="text-2xl font-bold dark:text-white">
             Theme Settings
           </h2>
-
           <button
-            onClick={onClose}
+            onClick={() => setThemeSettings(false)}
             className="w-10 h-10 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 flex items-center justify-center transition"
           >
-            <MdOutlineCancel className="text-2xl text-gray-600 dark:text-gray-300" />
+            <MdOutlineCancel className="text-2xl" />
           </button>
 
         </div>
@@ -55,7 +55,7 @@ const ThemeSettings = ({ onClose }) => {
               className="accent-blue-600"
             />
 
-            <span className="dark:text-gray-300">
+            <span className="dark:text-gray-700">
               Light
             </span>
 
@@ -72,7 +72,7 @@ const ThemeSettings = ({ onClose }) => {
               className="accent-blue-600"
             />
 
-            <span className="dark:text-gray-300">
+            <span className="dark:text-gray-700">
               Dark
             </span>
 

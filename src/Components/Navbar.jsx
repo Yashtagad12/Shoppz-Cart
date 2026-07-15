@@ -46,10 +46,10 @@ const Navbar = () => {
   }, [screensize])
 
   return (
-    <div className="flex justify-between p-2 md:mx-6 relative">
+    <div className="flex flex-col md:flex-row md:justify-between md:items-center p-2 md:mx-6 relative">
 
       {/* Menu Button - Always on Left */}
-      <div className="fixed left-4 z-50 md:static">
+      <div className="flex justify-start mb-3 md:mb-0 md:block">
         <NavButton
           title="Menu"
           customFunc={() => setActiveMenu((prevActionMenu) => !prevActionMenu)}
@@ -59,7 +59,7 @@ const Navbar = () => {
       </div>
 
       {/* Right Side Icons */}
-      <div className="flex gap-4 ml-auto">
+      <div className="flex gap-2 ml-auto">
         <NavButton
           title="Cart"
           customFunc={() => handleClick('cart')}
@@ -93,7 +93,7 @@ const Navbar = () => {
             alt="user"
           />
           <div>
-            <p className="text-gray-400 text-14">Hi, <span className="text-gray-900 font-bold">Michael</span></p>
+            <p className="text-gray-400 text-14">Hi, <span className="text-gray-900 font-bold">John</span></p>
           </div>
           <MdKeyboardArrowDown className="text-gray-400 text-14" />
         </div>
